@@ -1,0 +1,15 @@
+@mixin special-button-styles{
+    background-color: red;
+    color: black;
+    padding: 10px 20px;
+    border:white;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor:pointer;
+}
+.special-button{
+    @include special-button-styles;
+}
+.btn{
+    @include special-button-styles;
+}

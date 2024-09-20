@@ -1,0 +1,5 @@
+$is_bold:true;
+$is_italic:true;
+#id{
+    font-weight: if($is_bold and $is_italic,bold,normal);
+}

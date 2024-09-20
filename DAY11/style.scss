@@ -1,0 +1,18 @@
+$color_1:black;
+$color_2:red;
+$color_3:green;
+$color_4:pink;
+$margin:40px;
+#para1{
+    background-color: $color_1;
+    margin-top: $margin;
+}
+#para2{
+  background-color: $color_2;
+}
+#para3{
+ background-color: $color_3;
+}
+#para4{
+background-color: $color_4;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="myPara">this the original text</p>
+    <button id="mybutton">Click me to change the text</button>
+</body>
+<script>
+    const paragraph=document.getElementById("myPara");
+    const button=document.getElementById("mybutton");
+    button.addEventListener("click",()=>{
+        paragraph.textContent="Text changed using the DOM!";});
+
+</script>
+</html>

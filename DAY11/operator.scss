@@ -1,0 +1,7 @@
+$default_width:200px;
+$background_color:yellow;
+.hello{
+    width: $default_width +200px;
+    height: $default_width %6;
+    background-color: $background_color;
+}
