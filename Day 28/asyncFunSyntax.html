@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     // write a promise
+        function myfunc(){
+            return Promise.resolve("Hello")
+        }
+        
+    //Write async function
+
+        async function myfunc(){
+            return "Hello";
+        }
+    // how I will use this promise inside alert
+       myfunc().then(
+        function(value){/* code is successful*/},
+        function(error){/* code is unsuccessful*/}
+       );
+    </script>
+</body>
+</html>
