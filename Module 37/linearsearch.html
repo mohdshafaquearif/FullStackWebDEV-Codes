@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[6,2,5,10,9,37];
+        let n=arr.length;
+        let s=66;
+        function linearSearch(arr,n,s){
+            for(let i=0;i<n;i++){
+                if (arr[i]==s){
+                    return i;
+                }
+            }
+            return -1;
+        }
+        let result=linearSearch(arr,n,s);
+        if(result>=0){
+            console.log(`Element found at arr[${result}]`);
+        }
+        else{
+            console.log("Element not found");
+        }
+    </script>
+</body>
+</html>
