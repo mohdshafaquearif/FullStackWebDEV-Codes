@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function towerofHanoi(n,fromRod,toRod,auxRod){
+            if(n==1){
+                console.log(`Move disk 1 from ${fromRod}to ${toRod}`);
+                return;
+            }
+                towerofHanoi(n-1,fromRod,auxRod,toRod);
+                console.log(`Move disk ${n} from ${fromRod}to ${toRod}`);
+                towerofHanoi(n-1,auxRod,toRod,fromRod);
+        }
+        towerofHanoi(3,'A','B','C');
+    </script>
+</body>
+</html>

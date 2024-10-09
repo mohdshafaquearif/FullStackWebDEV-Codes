@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isAnagram(str1,str2){
+            let sortedStr1=str1.split('').sort().join('');//listen-> l i s t e n-> eilnst
+            let sortedStr2=str2.split('').sort().join('');//silent-> s i l e n t-> eilnst
+            return sortedStr1 ===sortedStr2
+        }
+        console.log(isAnagram("listen","silent"));
+        console.log(isAnagram("hello","guyss"));
+    </script>
+</body>
+</html>
