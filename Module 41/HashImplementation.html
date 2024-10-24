@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class HashTable{
+            constructor(){
+                this.table=new Array(10);// Create a new array with 10 empty slots for the hash table
+                this.size=0;// size is for hash table i.e. 0
+
+            }
+            hash(key){
+                let hash=0;
+                for(let i=0;i<key.length;i++){
+                    hash+= key.charCodeAt(i);
+                }
+                return hash% this.table.length;
+            }
+        }
+        var fruits=new HashTable();
+        console.log(fruits.hash("apple"));
+        console.log(fruits.hash("kiwi"));
+    </script>
+</body>
+</html>

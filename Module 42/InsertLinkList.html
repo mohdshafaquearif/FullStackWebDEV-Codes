@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class Node{
+        constructor(data){
+            this.data=data;
+            this.next=null;
+        }}
+        class LinkedList{
+            constructor(){
+                this.head=null;
+                this.size=0;
+            }
+            insert(data){
+                var node=new Node(data);
+                var current;
+                if(this.head==null){
+                    this.head=node;
+                }
+                else{
+                    current=this.head;
+                    while(current.next!=null){
+                        current=current.next;
+                    }
+                    current.next=node;
+                }
+                this.size++;
+            }
+       } 
+       var list1=new LinkedList();
+       list1.insert(54);
+       list1.insert(20);
+       list1.insert("Devidass");
+       list1.insert("Portia");
+       console.log(list1);
+       
+    </script>
+</body>
+</html>
